@@ -1,6 +1,5 @@
 package Greedy;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Scanner;
@@ -13,7 +12,6 @@ public class BOJ1744 {
         PriorityQueue<Integer> plusArr = new PriorityQueue<>(Collections.reverseOrder());
         PriorityQueue<Integer> minusArr = new PriorityQueue<>();
 
-        int answer = 0;
         int one = 0;
         int zero  = 0;
 
