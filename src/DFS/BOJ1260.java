@@ -1,7 +1,5 @@
 package DFS;
 
-import org.w3c.dom.Node;
-
 import java.util.*;
 
 public class BOJ1260 {
