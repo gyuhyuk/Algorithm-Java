@@ -29,6 +29,7 @@ public class BOJ11724 {
             A[s].add(e);
             A[e].add(s);
         }
+
         int count = 0;
         for(int i=1; i<n+1; i++) {
             if(!visited[i]) {
