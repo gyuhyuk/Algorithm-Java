@@ -1,5 +1,4 @@
 package DynamicProgramming;
-
 import java.util.Scanner;
 
 public class BOJ1463 {
