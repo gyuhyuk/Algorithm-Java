@@ -3,7 +3,6 @@ package BFS;
 import java.util.*;
 
 public class BOJ1389 {
-    static boolean[] visited;
     static ArrayList<Integer>[] A;
     static int[] dist;
 
@@ -12,7 +11,6 @@ public class BOJ1389 {
         int N = scanner.nextInt();
         int M = scanner.nextInt();
 
-        visited = new boolean[N+1];
         A = new ArrayList[N+1];
         dist = new int[N+1];
 
