@@ -18,7 +18,6 @@ public class BOJ15557 {
 
         deque.addAll(arrayList);
 
-
         for(int i=0; i<N-1; i++) {
             Double temp1 = deque.poll();
             Double temp2 = deque.poll();
