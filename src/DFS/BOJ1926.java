@@ -51,13 +51,13 @@ public class BOJ1926 {
             int newX = x + dx[i];
             int newY = y + dy[i];
 
-            if(newX < 0 || newY < 0 || newX >= N || newY >= M) {
+            if(newX < 0 || newY < 0 || newX >= N || newY >= M) { // 배열의 크기를 벗어나면 continue
                 continue;
             }
-            if(visited[newX][newY] || arr[newX][newY] == 0) {
+            if(visited[newX][newY] || arr[newX][newY] == 0) { // 방문했거나 0이면 무시
                 continue;
             }
-            area += DFS(newX, newY);
+            area += DFS(newX, newY); // area 계속 더해가기
         }
         return area;
     }
