@@ -47,6 +47,7 @@ public class BOJ1926 {
     static int DFS(int x, int y) {
         int area = 1;
         visited[x][y] = true;
+
         for(int i=0; i<4; i++) { // 4방향 탐색
             int newX = x + dx[i];
             int newY = y + dy[i];
