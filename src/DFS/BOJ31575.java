@@ -53,7 +53,6 @@ public class BOJ31575 {
             if(nx >= 0 && ny >= 0 && nx < M && ny < N && !visited[nx][ny] && map[nx][ny] == 1) {
                 visited[nx][ny] = true;
                 DFS(nx, ny);
-//                visited[nx][ny] = false;
             }
         }
     }
