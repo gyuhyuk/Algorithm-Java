@@ -7,8 +7,6 @@ import java.util.StringTokenizer;
 public class SWEA1210 {
     static int[][] map;
     static boolean[][] visited;
-    static int[] dx = {0, -1, 0}; // 좌, 상, 우
-    static int[] dy = {-1, 0, 1};
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
