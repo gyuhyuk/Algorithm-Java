@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 
 public class BOJ6603 {
     static int K;
-    static boolean[] visited;
     static int[] arr;
     static int[] S;
     public static void main(String[] args) throws IOException {
@@ -28,7 +27,6 @@ public class BOJ6603 {
                 S[i] = Integer.parseInt(st.nextToken());
             }
 
-            visited = new boolean[K];
             arr = new int[6];
 
             DFS(0, 0);
@@ -46,12 +44,8 @@ public class BOJ6603 {
         }
 
         for(int i = start; i<K; i++) {
-            if(!visited[i]) {
-                visited[i] = true;
-                arr[depth] = S[i];
-                DFS(i, depth+1);
-                visited[i] = false;
-            }
+            arr[depth] = S[i];
+            DFS(i+1, depth+1);
         }
     }
 }
